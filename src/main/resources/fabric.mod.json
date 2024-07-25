@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "naked-and-afraid",
+	"version": "${version}",
+	"name": "Naked And Afraid",
+	"description": "Minecraft is soo easy nowadays, right? Well, that ends today.",
+	"authors": [
+		"obscure021"
+	],
+	"contact": {
+		"homepage": "https://github.com/obscure021",
+		"sources": "https://github.com/obscure021/naked-and-afraid/"
+	},
+	"license": "MIT",
+	"icon": "assets/naked-and-afraid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.obscure.nakedandafraid.NakedAndAfraid"
+		],
+		"client": [
+			"com.obscure.nakedandafraid.NakedAndAfraidClient"
+		],
+		"fabric-datagen": [
+			"com.obscure.nakedandafraid.NakedAndAfraidDataGenerator"
+		]
+	},
+	"mixins": [
+		"naked-and-afraid.mixins.json",
+		{
+			"config": "naked-and-afraid.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
