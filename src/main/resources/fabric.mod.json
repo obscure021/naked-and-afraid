@@ -3,7 +3,7 @@
 	"id": "naked-and-afraid",
 	"version": "${version}",
 	"name": "Naked And Afraid",
-	"description": "Minecraft is soo easy nowadays, right? Well, that ends today.",
+	"description": "Use gamerule nakedAndAfraid to enable this mod in your world.",
 	"authors": [
 		"obscure021"
 	],

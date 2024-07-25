@@ -29,11 +29,11 @@ public class NakedAndAfraid implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final String MOD_ID = "naked_and_afraid";
+	public static final String MOD_ID = "naked-and-afraid";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static final GameRules.Key<GameRules.BooleanRule> NAKED_AND_AFRAID = GameRuleRegistry
-			.register("nakedAndAfraid", Category.MISC, GameRuleFactory.createBooleanRule(true));
+			.register("nakedAndAfraid", Category.PLAYER, GameRuleFactory.createBooleanRule(false));
 
 	@Override
 	public void onInitialize() {
